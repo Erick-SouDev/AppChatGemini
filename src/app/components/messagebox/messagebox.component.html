@@ -1,0 +1,12 @@
+<div class="header">
+  <h1>Pergunte ao GEMINI</h1>
+</div>
+<div class="container">
+  <textarea pSize="large" style="width: 50%;" rows="5" cols="30" pTextarea [(ngModel)]="text"></textarea>
+  <br>
+  <input type="text" pInputText  variant="filled"   [(ngModel)]="valor" placeholder="Digite Sua Pergunta"/>
+  <br>
+  <div class="card flex justify-center">
+    <p-button type="p-button"   label="Pergunta" size="large" (onClick) = "enviar()" ></p-button>
+   </div>
+</div>

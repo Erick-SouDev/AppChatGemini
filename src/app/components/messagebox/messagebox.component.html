@@ -1,12 +1,16 @@
-<div class="header">
-  <h1>Pergunte ao GEMINI</h1>
-</div>
-<div class="container">
-  <textarea pSize="large" style="width: 50%;" rows="5" cols="30" pTextarea [(ngModel)]="text"></textarea>
-  <br>
-  <input type="text" pInputText  variant="filled"   [(ngModel)]="valor" placeholder="Digite Sua Pergunta"/>
-  <br>
-  <div class="card flex justify-center">
-    <p-button type="p-button"   label="Pergunta" size="large" (onClick) = "enviar()" ></p-button>
-   </div>
+<div class="container-md">
+  <div class="row m-4">
+    <div class="col">
+      <div class="form-group">
+        <legend for="exampleFormControlTextarea1"><h3>Resposta Do Gemini</h3></legend>
+        <textarea [(ngModel)]="response" style="height: 400px;" class="form-control"  id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <br>
+      <input  type="text" class="form-control"  [(ngModel)]="valor" placeholder="Digite Sua Pergunta" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <button class="btn btn-success" type="button" id="button-addon2">Enviar</button>
+    </div>
+  </div>
 </div>
